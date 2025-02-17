@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E $CFile > c
+Cfile="main.c" | gcc -E $CFile > c
