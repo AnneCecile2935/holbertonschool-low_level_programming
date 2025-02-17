@@ -1,2 +1,2 @@
 #!/bin/bash
-export Cfile="main.c" && gcc -E "$CFile" > c
+export CFILE="main.c"; gcc -E "$CFILE" > c
