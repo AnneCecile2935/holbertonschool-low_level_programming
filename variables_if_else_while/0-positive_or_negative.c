@@ -8,9 +8,10 @@ int main(void)
 /**
  *main - print a sentence
  * Retunr: 0
- * if - first condition
- *else if - second condition
- *else - final condition
+ * if...else  - conditions
+ * @if : first condition
+ * @elseif: second condition
+ * @else: last condition
  */
 {
 	int n;
