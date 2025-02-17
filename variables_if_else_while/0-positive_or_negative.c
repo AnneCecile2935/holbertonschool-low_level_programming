@@ -5,6 +5,13 @@
 
 /* betty style doc for function main goes there */
 int main(void)
+/**
+ *main - print a sentence
+ * Retunr: 0
+ * if - first condition
+ *else if - second condition
+ *else - final condition
+ */
 {
 	int n;
 
