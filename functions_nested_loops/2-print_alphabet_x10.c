@@ -5,9 +5,9 @@
 void print_alphabet_x10(void)
 {
 int b;
-for (b = 0; b < 10; b++)
+while(b<9)
 {
-print_alphabet();
+for (b = 0; b < 10; b++)
 }
 _putchar('\n');
 }
