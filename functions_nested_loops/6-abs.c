@@ -4,13 +4,14 @@
 * @n : the number to be chekcked.
 * Return: 1 if it is positive, 0 is it is 0, -1 if it is negative.
 */
-int_abs(int n);
+int _abs(int n)
 {
-if (n < 0)
-{
-_putchar('-%d')
-}
-else {
-_putchar('%d')
-}
+  if (n < 0)
+    {
+      return(-n);
+    }
+  else
+    {
+      return(n);
+ }
 }
