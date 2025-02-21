@@ -21,6 +21,6 @@ while (n > 98)
 printf ("%d, ", n); n--;
 }
 }
-printf ("%d, ", 98);
-printf("\n");
+printf ("%d\n", 98);
 }
+
