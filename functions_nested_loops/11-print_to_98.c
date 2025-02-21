@@ -1,4 +1,4 @@
-#include <stdio.h>  
+#include <stdio.h>
 /**
 * print_to_98 - print numbers to 98
 * @n : first number print
