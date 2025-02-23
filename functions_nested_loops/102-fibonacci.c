@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-*main - prints first 50 Fibonaci numbers, starting with 1 and 2, separated by
-*comma followed by a space
-*Return main: nothing
+* main - Prints the first 52 fibonacci numbers
+*
+* Return: Nothing!
 */
 int main(void)
 {
