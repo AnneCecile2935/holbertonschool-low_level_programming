@@ -6,16 +6,19 @@
 */
 int main(void)
 {
-int i;
-long a = 1, b = 2, r = b;
-while (b + a < 40000000)
+unsigned long count, i, j, k, sums;
+i = sums = 0;
+j = 1;
+for (count = 0; count < 50; count++)
 {
-b += a;
-if (b % 2 == 0)
-r += b;
-a = b - a;
-i++;
+k = i + j;
+i = j;
+j = k;
+if (k % 2 == 0 && k < 4000000)
+{
+sums += k;
 }
-printf("%ld\n", r);
+}
+printf("%lu\n", sums);
 return (0);
 }
