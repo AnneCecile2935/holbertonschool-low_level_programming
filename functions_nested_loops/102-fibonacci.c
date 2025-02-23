@@ -10,14 +10,15 @@ unsigned long a = 0, b = 1, r;
 for (i = 0; i < 50 ; i++)
 {
 r = a + b ;
-printf("%lu", r);
+printf ("%lu", r);
 a = b;
 b = r;
-if (r == 49)
-printf("\n");
-else
-printf(",");
-printf(" ");
+if (i < 49)
+{
+printf (",");
+printf (" ");
 }
+}
+printf ("\n");
 return (0);
 }
