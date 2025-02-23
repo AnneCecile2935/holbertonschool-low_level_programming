@@ -1,15 +1,19 @@
 #include <stdio.h>
-int main(void)
+void fibonacci(int n)
 {
-unsigned long a = 1, b =2, r, i, c =98;
-printf("%lu, %lu", a, b);
-for (i = 2; i < c; i++)
+unsigned long long a = 1, b = 2;
+printf("%llu, %llu", a, b);
+for (int i = 2; i < n; i++)
 {
-r = a + b;
-printf(", %lu", r);
+unsigned long long next = a + b;
+printf(", %llu", next);
 a = b;
-b = r;
+b = next;
 }
 printf("\n");
-return (0);
+}
+int main()
+{
+fibonacci(98);
+return 0;
 }
