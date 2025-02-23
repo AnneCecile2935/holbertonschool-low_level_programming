@@ -2,7 +2,7 @@
 /**
 *main - prints first 50 Fibonaci numbers, starting with 1 and 2, separated by
 *comma followed by a space
-* Return : alwyas 0.
+*Return : alwyas 0.
 */
 int main(void)
 {
