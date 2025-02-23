@@ -1,9 +1,7 @@
 #include "main.h"
 /**
 * print_times_table - create a time table to 0 to 15.
-*@i : first value
-*@j : second value
-*@product: result of product i * j
+*@n : value to calculate
 */
 void print_times_table(int n)
 {
