@@ -10,12 +10,11 @@ int x;
 int y;
 for (x = 1; x <= size ; x++)
 {
-for (y = 1; y < x; y++)
+for (y = 1; y < size ; y++)
 {
 _putchar ('#');
 }
 _putchar ('#');
- _putchar('\n');
- }
- _putchar ('\n');
+_putchar ('\n');
+}
 }
