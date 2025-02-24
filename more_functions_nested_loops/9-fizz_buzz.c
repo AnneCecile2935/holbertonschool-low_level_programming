@@ -27,6 +27,5 @@ printf ("%d", n);
 }
 putchar(' ');
 }
-printf("\n");
 return (0);
 }
