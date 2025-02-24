@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_line - print line if n more than 0
+* print_diagonal - print \ in diagonal
 * @n : parameter of function
 * Return: Always 0.
 */
