@@ -6,12 +6,12 @@
  */
 int _isupper(int c)
 {
-if ('A'<= c && c <= 'Z')
+if ('A' <= c && c <= 'Z')
 {
-return(1);
+return (1);
 }
 else
 {
-return(0);
+return (0);
 }
 }
