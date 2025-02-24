@@ -25,10 +25,8 @@ else
 {
 printf ("%d", n);
 }
-if(n <100)
-{
 putchar(' ');
 }
-}
+printf("\n");
 return (0);
 }
