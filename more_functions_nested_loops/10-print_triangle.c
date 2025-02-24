@@ -13,11 +13,11 @@ if (size <= 0)
 {
 _putchar('\n');
 }
- else
+else
 {
 for (c = 1; c <= size; c++)
 {
-for (l = 1; l <= (size -c); l++)
+for (l = 1; l <= (size - c); l++)
 {
 _putchar(' ');
 }
