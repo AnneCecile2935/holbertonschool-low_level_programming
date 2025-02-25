@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_rev - print a sentence in reverse
+*int_rev - print a sentence in reverse
 *@str : string parameters
 */
 void print_rev(char *str)
