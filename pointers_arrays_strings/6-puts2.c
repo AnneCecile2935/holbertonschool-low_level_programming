@@ -1,9 +1,9 @@
 #include "main.h"
 #include <string.h>
 /**
- * puts2 - print another character of a string
- *@str: parameter function 
- */
+* puts2 - print another character of a string
+*@str: parameter function
+*/
 void puts2(char *str)
 {
 int len = 0;
