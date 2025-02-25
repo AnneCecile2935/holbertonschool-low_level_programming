@@ -6,11 +6,16 @@
  */
 void puts2(char *str)
 {
-size_t a;
-for (a = 0; a < strlen(str); a++)
+int len = 0;
+while (len >= 0)
 {
-if( a % 2 == 0)
-_putchar(str[a]);
-}
+if (str[len] == '\0')
+{
 _putchar('\n');
+break;
+}
+if (len % 2 == 0)
+_putchar(str[len]);
+len++;
+}
 }
