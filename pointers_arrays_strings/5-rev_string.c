@@ -6,11 +6,13 @@
 void rev_string(char *s)
 {
 char *end = s; 
-while (*end) {
-end++;  
+ while (*end)
+{
+end++;
 }
-end--;  
-while (s < end) {
+end--;
+while (s < end)
+{
 char temp = *s;
 *s = *end;
 *end = temp;
