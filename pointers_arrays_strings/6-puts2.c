@@ -1,0 +1,16 @@
+#include "main.h"
+#include <string.h>
+/**
+ * puts2 - print another character of a string
+ *@str: parameter function 
+ */
+void puts2(char *str)
+{
+size_t a;
+for (a = 0; a < strlen(str); a++)
+{
+if( a % 2 == 0)
+_putchar(str[a]);
+}
+_putchar('\n');
+}
