@@ -5,8 +5,8 @@
 */
 void rev_string(char *s)
 {
-char *end = s;
-while (*end)
+char *end = s*
+  while (*end)
 {
 end++;
 }
