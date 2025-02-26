@@ -18,7 +18,7 @@ half = (length + 1) / 2;
 }
 else
 {
-half = length / 2; 
+half = length / 2;
 }
 for (i = half; i < length ; i++)
 {
