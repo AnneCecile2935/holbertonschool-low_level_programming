@@ -13,13 +13,10 @@ int sign = 1;
 
 while (*s == ' ' || *s == '\t' || *s == '\n')
 s++;
+while (*s == '+' || *s == '-' || *s == ' ')
+{
 if (*s == '-')
-{
-sign = -1;
-s++;
-}
-else if (*s == '+')
-{
+sign = -sign;
 s++;
 }
 while (*s >= '0' && *s <= '9')
