@@ -2,7 +2,7 @@
 /**
 *_strcat - concat string
 *@dest: parameter of function destination
-*@src: parameter of function entry 
+*@src: parameter of function entry
 *Return: result of concat
 */
 char *_strcat(char *dest, char *src)
