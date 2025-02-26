@@ -3,7 +3,7 @@
 * _atoi - convert a string to an integer
 * @res: result of lecture
 * @s: parameter of function
-* @sign: sign of integer 
+* @sign: sign of integer
 *Return: result of convert
 */
 int _atoi(char *s)
@@ -22,7 +22,7 @@ while (*s)
 {
 if (*s >= '0' && *s <= '9')
 {
-res = res*10 + (*s - '0');
+res = res * 10 + (*s - '0');
 }
 else if (res > 0)
 {
@@ -30,6 +30,6 @@ break;
 }
 s++;
 }
-return (res * sign);
+return (res *sign);
 }
 
