@@ -18,10 +18,18 @@ if (*s == '-')
 sign = -sign;
 s++;
 }
-while (*s >= '0' && *s <= '9')
+while (*s)
+{
+if (*s >= '0' && *s <= '9')
 {
 res = res*10 + (*s - '0');
+}
+else if (res > 0)
+{
+break;
+}
 s++;
 }
 return (res * sign);
 }
+
