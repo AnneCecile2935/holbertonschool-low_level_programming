@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * *_strcpy - copy the string pointed to by src including null byte to dest
-*@*dest:destination of copy
-*@*str : source of string copy
+* *_strcpy - copy the string pointed to by src including null byte to dest
+* @dest: parameter for destination of copy
+* @src : parameter forsource of string copy
 *Return: dest
 */
 char *_strcpy(char *dest, char *src)
