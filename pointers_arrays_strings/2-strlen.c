@@ -7,9 +7,9 @@
 int _strlen(char *s)
 {
 int len = 0;
-while (s[len] != '\0')
+while (s[len] != '\0') // tant que le tableau n'a pas de valeur nulle
 {
-len++;
+len++; // on compte la longueur du tableau
 }
-return (len);
+return (len); // on retourne la longueur du tableau
 }
