@@ -5,10 +5,10 @@
 */
 void _puts(char *str)
 {
-while (*str != 0)
+while (*str != 0) // tant que le pointeur de rencontre pas de zero
 {
-_putchar(*str);
-str++;
+_putchar(*str); // on affiche la valeur de la chaine
+str++; // on continue de lire le suivant
 }
 _putchar('\n');
 }
