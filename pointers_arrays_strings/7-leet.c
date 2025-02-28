@@ -1,8 +1,8 @@
 #include "main.h"
 /**
 *_leet - convert each letter in number in a string
-*@: pointer to string
-*Return:
+*@str: pointer to string
+*Return: str value string convert
 */
 char *leet(char *str)
 {
@@ -21,5 +21,5 @@ break;
 }
 }
 }
-return str;
+ return (str);
 }
