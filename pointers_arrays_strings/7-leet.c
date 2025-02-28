@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*_leet - convert each letter in number in a string
+*leet - convert each letter in number in a string
 *@str: pointer to string
 *Return: str value string convert
 */
