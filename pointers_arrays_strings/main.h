@@ -19,3 +19,4 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 void print_number(int n);
+char *_memset(char *s, char b, unsigned int n);
