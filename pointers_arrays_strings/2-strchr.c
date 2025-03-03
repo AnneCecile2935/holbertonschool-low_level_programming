@@ -7,7 +7,6 @@
 */
 char *_strchr(char *s, char c)
 {
-const void *NULL = 0;
 int i = 0;
 while (s[i] != '\0')
 {
@@ -21,5 +20,5 @@ if (c == '\0')
 return ((char *)&s[i]);
 }
 }
- return ((char *)NULL);     
+return (0);     
 }
