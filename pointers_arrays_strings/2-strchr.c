@@ -1,5 +1,4 @@
 #include "main.h"
-#define NULL ((void*)0)
 /**
 *strchr - a function that locates a character in a string.
 *@s: pointer
@@ -8,6 +7,7 @@
 */
 char *_strchr(char *s, char c)
 {
+const void *NULL = 0;
 int i = 0;
 while (s[i] != '\0')
 {
@@ -21,5 +21,5 @@ if (c == '\0')
 return ((char *)&s[i]);
 }
 }
-return (NULL);     
+ return ((char *)NULL);     
 }
