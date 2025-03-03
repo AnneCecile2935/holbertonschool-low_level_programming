@@ -14,7 +14,7 @@ const char *s = src;
 unsigned int i;
 for (i = 0; i < n; i++)
 {
-d[i] = s[i];
+d[i] = s[i]; // a chaque itération de boucle, la valeur de s[i] est copiée dans d[i] octet de destination
 }
 return (dest);
 }
