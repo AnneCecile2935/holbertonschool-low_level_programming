@@ -20,5 +20,5 @@ if (c == '\0')
 return ((char *)&s[i]);
 }
 }
-return (0);     
+return ((char*)0);     
 }
