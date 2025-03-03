@@ -19,5 +19,5 @@ s++;
 if (*s == c)
 return (s);
 else
-return (0);     
+return (0);
 }
