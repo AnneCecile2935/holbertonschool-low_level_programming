@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*-strlen_recursion - a function that prints a string in reverse
+*_strlen_recursion - a function that prints the length of string
 *@s: pointer
 */
 int _strlen_recursion(char *s)
