@@ -2,7 +2,8 @@
 /**
 *_pow_recursion - a function that returns the value of w raised to the power
 *of y
-*@s: pointer
+*@x: parameter
+*@y: parameter
 *Return:_pow_recursion
 */
 int _pow_recursion(int x, int y)
