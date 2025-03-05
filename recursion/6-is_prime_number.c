@@ -11,9 +11,7 @@ if (n <= 1)
 return (0);
 if (n == 2)
 return (1);
-if (n % 2 == 0)
-return (0);
-return (prime(n, 3));
+return (prime(n, n / 2));
 }
 /**
 *prime - function for calculate square root of number
@@ -21,11 +19,11 @@ return (prime(n, 3));
 *@a : paramter
 *Return: sqrt_square
 */
-int prime(int a, int n)
+int prime(int n, int a)
 {
-if (a * a > n)
+if (a == 1)
 return (1);
 if (n % a == 0)
 return (0);
-return (prime(n, a + 2));
+return (prime(n, a - 1));
 }
