@@ -2,8 +2,9 @@
 /**
 *_sqrt_recursion - a function that returns the natural square root of number
 *sqrt_square - function for calculate square root of number
-*@n: parameter
-*Return:_sqrt_recursion
+*@n: parameter for number
+*@a: parameter
+*Return:sqrt_square
 */
 int _sqrt_recursion(int n)
 {
