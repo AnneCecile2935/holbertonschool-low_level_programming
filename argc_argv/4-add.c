@@ -3,8 +3,8 @@
 #include <ctype.h>
 /**
 * main - prints number of arguments
-* @argc: number of arguments
-* @argv: array of pointers to name of program and arguments
+* is_number - function
+* @str: parameter
 * Return: Always 0 on success.
 */
 int is_number(char *str)
