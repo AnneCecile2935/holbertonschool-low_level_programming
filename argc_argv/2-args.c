@@ -7,12 +7,16 @@
 */
 int main(int argc, char *argv[])
 {
-int i;
-while (argc--)
-printf("%s\n", *argv++);
-for (i = 1; i < argc; i++)
+int i; // i utilisée dans la boucle for
+int argc_dep = argc; // déclarer ces variables pour conserver leur valeurs initiales après la boucle while
+int argv_dep = argv; // idem
+while (argc--) // décremente le nombre d'arguments restants
+printf("%s\n", *argv++); // affiche la valeur de l'arguments et continue
+argc = int argc_dep; // redonne les valeurs initiales de argc et argv
+argv = int argv_dep;
+for (i = 1; i < argc; i++) // tant que i est < au compteur argc, on continue de parcourir
 {
-printf("%s\n", argv[i]);
+printf("%s\n", argv[i]); // affiche les valeurs des arguments du tableau 
 }
 return (0);
 }
