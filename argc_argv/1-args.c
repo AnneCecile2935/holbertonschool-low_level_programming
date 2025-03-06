@@ -7,7 +7,7 @@
 */
 int main(int argc, char *argv[])
 {
-(void)argv;
-printf("%d\n", argc - 1);
+(void)argv; // astuce, on n'utilise pas ici argv car on veut juste le nombre d'arguments
+printf("%d\n", argc - 1); // argc -1 car on ne veut pas afficher le nom du programme
 return (0);
 }
