@@ -8,7 +8,7 @@
  */
 int main(int argc, char **argv)
 {
-while (argc--)
-printf("%s\n", *argv++);
+while (argc--) //decremente le compteur d'arguments argc
+printf("%s\n", *argv++); // affiche le premier argument et les suivant tant que argc n'est pas = à 0
 return (0);
 }
