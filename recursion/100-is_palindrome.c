@@ -25,7 +25,7 @@ return (is_palindrome_p(s, debut + 1, fin - 1));
 /**
 *string_length - function length of string
 *@s: parameter
-*Return : string_length.
+*Return: string_length.
 */
 int string_length(char *s)
 {
