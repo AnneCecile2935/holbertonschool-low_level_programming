@@ -15,7 +15,7 @@ if (s[debut] != s[fin])
 {
 return (0);
 }
-return is_palindrome_p(s, debut + 1, fin -1 );
+return is_palindrome_p(s, debut + 1, fin - 1);
 }
 int is_palindrome(char *s)
 {
@@ -24,11 +24,10 @@ if (*s == '\0')
 {
 return (1);
 }
- 
- if (*s != '\0')
-   {
-     length++;
-     length += is_palindrome(s+1);
-   }
+if (*s != '\0')
+{
+length++;
+length += is_palindrome(s + 1);
+}
 return is_palindrome_p(s, 0, length - 1);
 }
