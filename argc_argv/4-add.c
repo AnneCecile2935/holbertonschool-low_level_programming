@@ -3,8 +3,7 @@
 #include <ctype.h>
 /**
 *is_number - prints number of arguments
-*_number: - function
-* @str: parameter
+*@str: parameter
 * Return: Always 0 on success.
 */
 int is_number(char *str)
