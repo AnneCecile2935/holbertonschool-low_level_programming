@@ -1,10 +1,9 @@
 #include "main.h"
 /**
-
-*is_palindrome_p - a function
+*is_palindrome_p - a function.
 *@debut : parameter debut chaine
 *@fin :parameter fin chaine
-*Return:1
+*Return:is_palindrome_p
 */
 int is_palindrome_p(char *s, int debut, int fin)
 {
@@ -22,6 +21,7 @@ return (is_palindrome_p(s, debut + 1, fin - 1));
 *is_palindrome - a function that returns 1 if a string is a palindrome
 *and 0 if not
 *@s: parameter for string
+*Return : is_palindrome
 */
 int is_palindrome(char *s)
 {
