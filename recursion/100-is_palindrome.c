@@ -4,7 +4,7 @@
 *@debut : parameter debut chaine
 *@fin :parameter fin chaine
 *Return:is_palindrome_p
-*is_palindrome - a function that returns 1 if a string is a palindrome
+*_palindrome - a function that returns 1 if a string is a palindrome
 *and 0 if not
 *@s: parameter for string
 *Return : is_palindrome
