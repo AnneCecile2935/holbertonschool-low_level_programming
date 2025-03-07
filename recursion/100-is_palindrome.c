@@ -23,7 +23,7 @@ return (is_palindrome_p(s, debut + 1, fin - 1));
 *is_palindrome - a function that returns 1 if a string is a palindrome
 *and 0 if not
 *@s: parameter for string
-*Return : is_palindrome
+*Return: is_palindrome.
 */
 int is_palindrome(char *s)
 {
