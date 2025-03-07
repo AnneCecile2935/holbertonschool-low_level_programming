@@ -21,9 +21,6 @@ return (0);
 }
 return (is_palindrome_p(s, debut + 1, fin - 1));
 }
-/**
-
-*/
 int is_palindrome(char *s)
 {
 int length = 0;
