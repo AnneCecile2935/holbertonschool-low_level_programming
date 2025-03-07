@@ -22,6 +22,9 @@ return (1);
 }
 /**
 *main - prints number of arguments
+*@argc:parameter counter arguments
+*@argv:parameter array of arguments
+*Return: Always 0
 */
 int main(int argc, char *argv[])
 {
