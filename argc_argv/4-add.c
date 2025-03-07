@@ -3,6 +3,7 @@
 #include <ctype.h>
 /**
 *main - prints number of arguments
+*
 *is_number - function
 * @str: parameter
 * Return: Always 0 on success.
