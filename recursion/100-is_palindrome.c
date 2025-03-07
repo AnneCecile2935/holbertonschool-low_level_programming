@@ -3,6 +3,10 @@
 *is_palindrome - a function that returns 1 if a string is a palindrome
 *and 0 if not
 *@s: parameter for string
+*is_palindrome_p - a function
+*@debut : parameter debut chaine
+*@fin :parameter fin chaine
+
 *Return:1
 */
 int is_palindrome_p(char *s, int debut, int fin)
@@ -15,7 +19,7 @@ if (s[debut] != s[fin])
 {
 return (0);
 }
-return is_palindrome_p(s, debut + 1, fin - 1);
+ return (is_palindrome_p(s, debut + 1, fin - 1));
 }
 int is_palindrome(char *s)
 {
@@ -29,5 +33,5 @@ if (*s != '\0')
 length++;
 length += is_palindrome(s + 1);
 }
-return is_palindrome_p(s, 0, length - 1);
+ return (is_palindrome_p(s, 0, length - 1));
 }
