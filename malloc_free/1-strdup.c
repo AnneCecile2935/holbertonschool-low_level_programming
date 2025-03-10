@@ -42,12 +42,14 @@ return (dest);
  */
 char *_strdup(char *str)
 {
-unsigned int len = _strlen(str) + 1;
-char *cpy = malloc(len);
+unsigned int len;
+char *cpy;
 if (str == NULL)
 {
 return (NULL);
 }
+len = _strlen(str) + 1;
+cpy = malloc(len);
 if (cpy == NULL)
 {
 return (NULL);
