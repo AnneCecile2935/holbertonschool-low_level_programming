@@ -43,12 +43,12 @@ return (dest);
  */
 char *str_concat(char *s1, char *s2)
 {
-int lens1 = _strlen(s1);
-int lens2 = _strlen(s2);
-int lensr = lens1 + lens2 + 1;
-int i = 0;
-int j = 0;
-char *cpy = (char *)malloc(lensr);
+int lens1;
+int lens2;
+int lensr;
+int i;
+int j;
+char *cpy;
 if (s1 == NULL)
 {
 s1 = "";
@@ -57,6 +57,10 @@ if (s2 == NULL)
 {
 s2 = "";
 }
+lens1 = _strlen(s1);
+lens2 = _strlen(s2);
+lensr = lens1 + lens2 + 1;
+cpy = (char *)malloc(lensr);
 if (cpy == NULL)
 {
 return (NULL);
