@@ -35,10 +35,11 @@ d[i] = s[i];
 return (dest);
 }
 /**
- * _strdup - function that returns a pointer to a newly allocated in memory
+ * str_concat - function that returns a pointer to a newly allocated in memory
  *which contains a copy of the string givent as a parameter.
- * @str: parameter of char
- * * Return: ptr
+ * @s1: parameter of char 1
+ *@s2: parameter  of char 2
+ * Return: ptr
  */
 char *str_concat(char *s1, char *s2)
 {
@@ -56,18 +57,18 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-if(cpy == NULL)
+if (cpy == NULL)
 {
 return (NULL);
-}  
+}
 for (i = 0; i < lens1; i++)
 {
 cpy[i] = s1[i];
 }
-for (j =0; j < lens2; j++)
+for (j = 0; j < lens2; j++)
 {
 cpy[lens1 + j] = s2[j];
 }
-cpy[lensr -1] = '\0';
+cpy[lensr - 1] = '\0';
 return (cpy);
 }
