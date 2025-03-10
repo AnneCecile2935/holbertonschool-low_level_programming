@@ -10,22 +10,22 @@
  */
 char *create_array(unsigned int size, char c)
 {
-unsigned int i;
-char *array = NULL;
-if (size == '\0')
+unsigned int i; // declare variable compteur pour la boucle for
+char *array = NULL; // retour du pointeur vers le tableau NULL
+if (size == 0) // si la taille est 0
 {
-return (NULL);
+return (NULL); // retour NULL
 }
-if (size != '0')
+if (size != 0) // si la taille n'est pas nulle
 {
-array = (char *)malloc(size * sizeof(char));
-}
-if (array != NULL)
+array = (char *)malloc(size * sizeof(char)); // allocation de la mémoire de taille size x sizeof char
+}                                             // retourne le pointeur vers le bloc mémoire du tableau
+if (array != NULL) // si l'allocation de mémoire est réussie
 {
-for (i = 0; i < size; i++)
+for (i = 0; i < size; i++) // on initialise si la variable est inférieure à la taille
 {
-array[i] = c;
+array[i] = c; // on initialise le tableau avec la valeur char spécifique c 
 }
 }
-return (array);
+return (array); //retourne le pointeur vers le tableau alloué et initialisé
 }
