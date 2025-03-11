@@ -27,7 +27,7 @@ if (n >= lens2)
 {
 n = lens2;
 }
-cpy = malloc (sizeof(char) * (lens1 + n + 1));
+cpy = malloc(sizeof(char) * (lens1 + n + 1));
 if (cpy == NULL)
 return (NULL);
 for (i = 0; i < lens1; i++)
