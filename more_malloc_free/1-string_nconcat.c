@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *string_nconcat - function concat two strings 
+ *string_nconcat - function concat two strings
  *@s1 : first string
  *@s2: second string
  *@n: number of caractere copy
@@ -19,13 +19,10 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-while (s1[lens1] != '\0') {
+while (s1[lens1] != '\0')
 lens1++;
-}
-while (s2[lens2] != '\0') 
-{
-lens2++;  
-}
+while (s2[lens2] != '\0')
+lens2++;
 if (n >= lens2)
 {
 n = lens2;
@@ -42,5 +39,5 @@ for (j = 0; j < n; j++)
 cpy[i + j] = s2[j];
 }
 cpy [i + j] = '\0';
-return (cpy); 
+return (cpy);
 }
