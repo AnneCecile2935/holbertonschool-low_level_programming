@@ -4,7 +4,7 @@
  *_calloc - function calloc to initialize
  *@nmemb: parameter nb of elements
  *@size: size of elements
- *Return : (void *)ptr pointer
+ *Return:void *ptr pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
