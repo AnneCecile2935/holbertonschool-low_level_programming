@@ -2,13 +2,13 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- *_strcpy - function that copy a string
- *@src: parameter struct
- *Return: dest, pointer
+ *free_dog - function that free struct mem
+ *@d: parameter struct
+ *Return: nothing
  */
 void free_dog(dog_t *d)
 {
-if( d != NULL)
+if (d != NULL)
 {
 free(d->name);
 free(d->owner);
