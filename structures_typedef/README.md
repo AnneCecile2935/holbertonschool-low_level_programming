@@ -1,4 +1,4 @@
-Projet C - Malloc, Free 
+Projet C - Structure type def malloc free 
 Ce projet a pour but de manipuler la mémoire dynamique en C avec les fonctions malloc et free. Il se concentre sur la gestion de la mémoire allouée dynamiquement pour des structures de données, notamment avec des chaînes de caractères et des pointeurs.
 
 Description 
