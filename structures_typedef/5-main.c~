@@ -1,5 +1,0 @@
-/**
- *_strcpy - function that copy a string
- *@src: parameter struct
- *Return: dest, pointer
- */

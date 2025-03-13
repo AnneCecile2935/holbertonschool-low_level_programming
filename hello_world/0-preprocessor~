@@ -1,3 +1,0 @@
-#!/bin/bash
-CFile="main.c"
-gcc -E $CFile.c -o cfile.c
