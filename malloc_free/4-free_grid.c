@@ -12,9 +12,9 @@ void free_grid(int **grid, int height)
 int i;
 if (grid == NULL)
 return;
-for (i = 0; i < height; i++)
+for (i = 0; i < height; i++) // on parcourt chaque ligne tu tableau
 {
-free(grid[i]);
+free(grid[i]); // on libère chaque ligne du tableau
 }
-free(grid);
+free(grid); // on lièbere le tableau
 }
