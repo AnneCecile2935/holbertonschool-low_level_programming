@@ -2,39 +2,6 @@
 #include "main.h"
 #include <stdlib.h>
 /**
-*_strlen - return the lenght of a string
-*@str : parameter function
-*Return: return the result , the length.
-*/
-int _strlen(char *str)
-{
-int len = 0;
-while (str[len] != '\0')
-{
-len++;
-}
-return (len);
-}
-/**
-*_memcpy - The _memcpy() function copies n bytes from memory area
-*src to memory area dest
-*@dest: pointer to memory
-*@src: value
-*@n: number of bytes to fill
-*Return: dest new value.
-*/
-char *_memcpy(char *dest, char *src, unsigned int n)
-{
-char *d = dest;
-const char *s = src;
-unsigned int i;
-for (i = 0; i < n; i++)
-{
-d[i] = s[i];
-}
-return (dest);
-}
-/**
  * _strdup - function that returns a pointer to a newly allocated in memory
  *which contains a copy of the string givent as a parameter.
  * @str: parameter of char
@@ -42,18 +9,23 @@ return (dest);
  */
 char *_strdup(char *str)
 {
-unsigned int len;
+int len = 0; // calcul longueur chaine
+int i = 0; // utiliser pour copier la chaine
 char *cpy;
 if (str == NULL)
 {
-return (NULL);
+return (NULL); // si la chaine est nulle, on renvoie null
 }
-len = _strlen(str) + 1;
-cpy = malloc(len);
-if (cpy == NULL)
+while (str[len]) // compte la longueur de la chaine
+len++;
+cpy = malloc(len + 1); // alloue la mémoire pour la longueur de la nouvelle chaine copiée
+if (cpy == NULL) // vérifié si la chaine est nulle
 {
 return (NULL);
 }
-_memcpy(cpy, str, len);
-return (cpy);
+for (i = 0; i <= len; i++) // parcours la chaine src \0 compris(<=)
+{
+cpy[i] = src[i]; // copie chaque caractère de src dans cpy 
+}
+return (cpy); // renvoie la nouvelle chaine copiée
 }
