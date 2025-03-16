@@ -9,20 +9,20 @@
  */
 int *array_range(int min, int max)
 {
-int *ptr;
+int *ptr; // pointeur vers le tableau qu'on va créer
 int i;
-int size;
-size_t total_size;
+int size; // le nombre d'éléments du tableau
+size_t total_size; // la taille du tableau donc taille de la mémoire à allouer
 if (min > max)
 return (NULL);
-size = max - min + 1;
-total_size = (sizeof(int) * size);
-ptr = malloc(total_size);
+size = max - min + 1; // nombres d'élements du tableau par exemple de 6 à 2 = 6-2+1 = 5
+total_size = (sizeof(int) * size); // taille de mémoire suffisante pour le nbre d'éléement
+ptr = malloc(total_size); // allocation de la mémoire
 if (ptr == NULL)
 return (NULL);
-for (i = 0; i < size; i++)
+for (i = 0; i < size; i++) // 
 {
-ptr[i] = min + i;
+ptr[i] = min + i; // on remplit le tableau en allant de min à max en commençant par min 
 }
 return (ptr);
 }
