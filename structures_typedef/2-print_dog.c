@@ -10,7 +10,7 @@ void print_dog(struct dog *d)
 {
 if (d == NULL)
 return;
-if (d->name == NULL)
+if (d->name == NULL) // on vérifie que la name n'est pas nul pour éviter un crash à l'affichage, idem pour owner
 d->name = "(nil)";
 if (d->owner == NULL)
 d->owner = "(nil)";
