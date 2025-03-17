@@ -1,7 +1,0 @@
-#include "function_pointer.h"
-void print_name(char *name, void (*f)(char *))
-{
-if (name == 0 || f = 00)
-return;
-f(name);
-}
