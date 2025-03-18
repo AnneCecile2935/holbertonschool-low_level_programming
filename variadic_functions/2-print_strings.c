@@ -11,12 +11,8 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
-unsigned int j;
 char *current_word;
-int is_letter_only = 1;
 va_list arg;
-if (separator == NULL)
-separator = "";
 va_start(arg, n);
 for (i = 0; i < n; i++)
 {
@@ -24,18 +20,7 @@ current_word = va_arg(arg, char*);
 if (current_word == NULL)
 printf("(nil)");
 else
-{
-for (j = 0; current_word[j] != '\0'; j++)
-{
-if (!isalpha((unsigned char)current_word[j]))
-{
-is_letter_only = 0;
-break;
-}
-}
-if (is_letter_only)
 printf("%s", current_word);
-}
 if (i < n - 1 && separator != NULL)
 printf("%s", separator);
 }
