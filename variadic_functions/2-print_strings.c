@@ -11,19 +11,19 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
-char *current_word;
-va_list arg;
-va_start(arg, n);
-for (i = 0; i < n; i++)
+char *current_word; // pointer to the word
+va_list arg; // acceed to the arguments variadic
+va_start(arg, n); // initialization to read the arguments
+for (i = 0; i < n; i++) // loops for catch the word
 {
-current_word = va_arg(arg, char*);
-if (current_word == NULL)
+current_word = va_arg(arg, char*); // each arguments is catch, it is char
+if (current_word == NULL) // condition if word is NULL
 printf("(nil)");
 else
-printf("%s", current_word);
-if (i < n - 1 && separator != NULL)
-printf("%s", separator);
+printf("%s", current_word); // print the word
+if (i < n - 1 && separator != NULL) // separate each word by separator without the last word (n-1) and if separator is not NULL
+printf("%s", separator); // print the separator
 }
 printf("\n");
-va_end(arg);
+va_end(arg); //free va list 
 }
