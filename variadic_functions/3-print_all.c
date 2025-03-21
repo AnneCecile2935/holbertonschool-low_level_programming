@@ -8,8 +8,7 @@
  */
 void print_letter(va_list arg)
 {
-char letter = va_arg(arg, int);
-printf("%c", letter);
+printf("%c", va_arg(arg, int));
 }
 /**
  * print_flo - function to recognize float
@@ -18,8 +17,7 @@ printf("%c", letter);
  */
 void print_flo(va_list arg)
 {
-double flo = va_arg(arg, double);
-printf("%.2f", flo);
+printf("%f", va_arg(arg, double));
 }
 /**
  * print_number - function to recognize int
@@ -28,22 +26,18 @@ printf("%.2f", flo);
  */
 void print_number(va_list arg)
 {
-int number = va_arg(arg, int);
-printf("%d", number);
+printf("%d", va_arg(arg, int));
 }
 /**
- * print_str - function to recognize string
- *@arg: the argument in parameter
- *Return: nothing
- */
+ *print_str - function prints string
+ *@arg: parameter
+ *Return: nothing.
+  */
 void print_str(va_list arg)
 {
-char *str = va_arg(arg, char*);
+char *str = va_arg(arg, char *);
 if (str == NULL)
-{
-printf("(nil)");
-return;
-}
+str = "(nil)";
 printf("%s", str);
 }
 /**
@@ -59,7 +53,7 @@ print type[] = {
 {'i', print_number},
 {'f', print_flo},
 {'s', print_str},
-{'\0', NULL},
+{'\0', NULL}
 };
 char *separator = "";
 int i = 0;
