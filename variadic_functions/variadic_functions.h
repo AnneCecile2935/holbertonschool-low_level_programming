@@ -3,7 +3,7 @@
 #include <stdarg.h>
 /**
  * struct print - Structure charactere to the function
- * @entry: symbole du type 
+ * @entry: symbole du type
  * @print_func: poiter to the function
  */
 typedef struct print
