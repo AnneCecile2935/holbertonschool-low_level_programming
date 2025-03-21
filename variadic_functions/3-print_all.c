@@ -8,7 +8,7 @@
  */
 void print_letter(va_list arg)
 {
-char letter = va_arg(arg, char);
+char letter = va_arg(arg, int);
 printf("%c", letter);
 }
 /**
