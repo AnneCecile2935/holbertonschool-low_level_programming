@@ -17,17 +17,11 @@ const list_t *current = h;
 while (current != NULL)
 {
 if (current->str == NULL)
-{
 printf("[0] (nil)\n");
-count++;
-current = current->next;
-}
 else
-{
 printf("[%u] %s\n", current->len, current->str);
 count++;
 current = current->next;
-}
 }
 return (count);
 }
