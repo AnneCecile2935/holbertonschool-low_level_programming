@@ -7,11 +7,11 @@
 void free_list(list_t *head)
 {
 list_t *parc;
-while (head != NULL)
+while (head != NULL) // tant que head n'est pas NULL
 {
-parc = head;
-head = head->next;
-free(parc->str);
-free(parc);
+parc = head; // on parcourt 
+head = head->next; // on passe au noeud suivant
+free(parc->str); // on libère la chaine
+free(parc); // on lièbere le noeud
 }
 }
