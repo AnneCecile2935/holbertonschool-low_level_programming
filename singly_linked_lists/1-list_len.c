@@ -12,12 +12,16 @@
  */
 size_t list_len(const list_t *h)
 {
-unsigned int count = 0;
+size_t count = 0;
 const list_t *current = h;
 while (current != NULL)
 {
+if (current->str == NULL)
+return (count);
+else
 count++;
 current = current->next;
 }
 return (count);
 }
+
