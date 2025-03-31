@@ -12,16 +12,16 @@
  */
 size_t print_list(const list_t *h)
 {
-size_t count = 0;
-const list_t *current = h;
-while (current != NULL)
+size_t count = 0; //compteur
+const list_t *current = h; // définir un pointeur qui va parcourir la list en démarrant au debut (h)
+while (current != NULL) // verif si pas NULL
 {
-if (current->str == NULL)
-printf("[0] (nil)\n");
+if (current->str == NULL) // parcourt la liste tant qu'il n'est pas NULL
+printf("[0] (nil)\n"); // erreur si null
 else
-printf("[%u] %s\n", current->len, current->str);
-count++;
-current = current->next;
+printf("[%u] %s\n", current->len, current->str); // sinon affiche la longueur et la chaine
+count++; // incrementation du commpteur
+current = current->next; // on passe au suivant
 }
-return (count);
+return (count); // retour du cocmpteur
 }
