@@ -18,12 +18,11 @@ return (NULL);
 parcourt = *h;
 while (parcourt != NULL)
 {
-    count++;
+count++;
 parcourt = parcourt->next;
 }
 if (idx > count)
 return (NULL);
-
 if (idx == 0)
 return (add_dnodeint(h, n));
 parcourt = *h;
