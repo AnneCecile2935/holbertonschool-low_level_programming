@@ -12,8 +12,18 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 dlistint_t *new_node;
 dlistint_t *parcourt;
 unsigned int i;
+unsigned int count = 0;
 if (h == NULL)
 return (NULL);
+parcourt = *h;
+while (parcourt != NULL)
+{
+    count++;
+parcourt = parcourt->next;
+}
+if (idx > count)
+return (NULL);
+
 if (idx == 0)
 return (add_dnodeint(h, n));
 parcourt = *h;
