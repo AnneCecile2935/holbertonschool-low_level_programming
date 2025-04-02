@@ -17,7 +17,7 @@ return (NULL);
 if (idx == 0)
 return (add_dnodeint(h, n));
 parcourt = *h;
-for (i = 0; parcourt && i < idx - 1 ; i++)
+for (i = 0; parcourt!= NULL && i < idx - 1 ; i++)
 parcourt = parcourt->next;
 if (parcourt == NULL || parcourt->next == NULL)
 return (add_dnodeint_end(h, n));
