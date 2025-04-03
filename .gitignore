@@ -1,0 +1,39 @@
+# Fichiers compilés
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dll
+*.c~
+
+# Répertoires de compilation
+/build/
+/bin/
+/obj/
+
+# Fichiers de logs et de débogage
+*.log
+*.stackdump
+gmon.out
+
+# Fichiers de l'éditeur
+*.swp
+*.swo
+*.bak
+*.tmp
+*.~ 
+
+# Fichiers spécifiques à certains IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Makefiles et CMake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# Fichiers de dépendances
+compile_commands.json
