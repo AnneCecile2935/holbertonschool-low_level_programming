@@ -42,7 +42,7 @@ exit(100);
  */
 int main(int argc, char **argv)
 {
-	int numread, num_writ, fd_src, fd_dest;
+	int numread = 1024, num_writ, fd_src, fd_dest;
 	char buffer[1024];
 	struct stat st;
 if (argc != 3)
