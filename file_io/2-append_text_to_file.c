@@ -17,7 +17,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (!text_content)
 		return (1);
 		/* open the file and start appending */
-	fd = open(filename,  O_APPEND | O_WRONLY | O_CREAT, 0666);
+	fd = open(filename,  O_APPEND | O_WRONLY, 0666);
 	if (fd == -1)
 		return (-1);
 	/* get length of text content */
