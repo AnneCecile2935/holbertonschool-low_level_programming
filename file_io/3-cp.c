@@ -68,7 +68,7 @@
 		}
 		if (numread == -1)
 		{
-			error_check(0, -1, argv);
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			close_check(fd_src);
 					close_check(fd_dest);
 					exit(100);
