@@ -72,8 +72,8 @@
 			close_check(fd_src);
 					close_check(fd_dest);
 					exit(100);
+		}
 		close_check(fd_src);
 		close_check(fd_dest);
-		}
 		return (0);
 		}
