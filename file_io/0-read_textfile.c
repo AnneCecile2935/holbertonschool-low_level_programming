@@ -34,9 +34,9 @@ free(buffer);
 close(fd);
 return (0);
 }
+buffer [bytes_read] = '\0';
 while (total_written < bytes_read)
 {
-buffer [bytes_read] = '\0';
 bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 if (bytes_written == -1 || bytes_written != bytes_read)
 {
@@ -46,5 +46,5 @@ return (0);
 }
 total_written += bytes_written;
 }
-return (bytes_written);
+return (total_written);
 }
