@@ -63,7 +63,7 @@
 					dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 					close_check(fd_src);
 					close_check(fd_dest);
-					exit(99);
+					exit(100);
 				}
 		}
 		if (numread == -1)
